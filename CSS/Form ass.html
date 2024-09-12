@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            height: 100vh;
+            color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            margin: auto;
+            background-color: #2A2A2A;
+            padding: 50PX;
+            border-radius: 10PX;
+            width: 300PX;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .Password-Output {
+            display: flex;
+            padding: 5px;
+            background-color: #2A2A2A;
+            color: #FFFFFF;
+            border: 1px solid #555 ;
+            border-radius: 5px;
+            font-size: 1rem;
+            
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        
+        .checkboxes {
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <form action = "">
+        <div class="container">
+            <h1>Password Generator</h1>
+        <div class = "Password-Output">
+            <input type="text" id="Password">
+            <button="copy-btn" onclick="copyPassword()">&#128203;</button=>
+        </div>
+        <div class="options">
+            <div class="Character-Length">
+                <label for="length">Character Length</label>
+                <input type="range" id="length" min="0" max="20" value="0" > 
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox">
+                <label for="">Include Uppercase Letters</label>
+                <input type="checkbox">
+                <label for="">Include Lowercase Letters</label>
+                <input type="checkbox">
+                <label for="">Include Numbers</label>
+                <input type="checkbox">
+                <label for="">Include Symbols</label>
+            </div>
+            <div class="strength">
+                <label for="">Strength</label>
+                <div class="strength-bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <button>Generate</button>
+        </div>
+        
+        
+
+
+    </form>
+    
+</body>
+</html>

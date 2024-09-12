@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #141519;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    form{
+        background-color: #1F262F;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    button{
+        background-color: #2C2B33;
+        border: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        color: orange;
+    }
+    .text{
+        color: white;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    h2{
+        font-size: small;
+        font-weight: lighter;
+    }
+    .numbers{
+        display: flex;
+        gap: 20px;
+    }
+    h3{
+        background-color: gray;
+        border: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .submit{
+        color: black;
+        background-color: orange;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 30px;
+    }
+</style>
+<body>
+    <form action="">
+        <div>  
+        <button>
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </button>
+        </div>
+        <div class="text">
+            <h1>How did we do?</h1>
+            <h2>Please let us know how we did with your support 
+                <br>request. All feedback is appreciated to help us 
+                <br>improve our offering</h2>
+        <div class="numbers">
+            <h3>1</h3>
+            <h3>2</h3>
+            <h3>3</h3>
+            <h3>4</h3>
+            <h3>5</h3>
+        </div>
+        </div>
+        <button class="submit">Submit</button>
+    </form>
+</body>
+</html>
